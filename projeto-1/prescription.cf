@@ -1,0 +1,11 @@
+Durante. Prescricao ::= Dose "durante" Turno;
+Qtd. Dose ::= "500mg" Medicamento
+QualquerHorario. Turno ::= Tempo
+DeManha. Turno ::= Tempo "de manhã"
+DeTarde. Turno ::= Tempo "de tarde"
+DeNoite. Turno ::= Tempo "de noite"
+DoisTurnos. Turno ::= Turno "e" Turno
+Insulina. Medicamento ::= "insulina" ;
+Diazepam. Medicamento ::= "diazepam" ;
+Cefalexina. Medicamento ::= "cefalexina" ;
+Ciprofloxacino. Medicamento ::= "ciprofloxacino"

@@ -38,4 +38,3 @@ if __name__ == "__main__":
         phrase = input("Escreva uma frase em inglês: ")
         if phrase == "quit":
             running = False
-

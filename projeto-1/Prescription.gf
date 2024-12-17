@@ -2,13 +2,13 @@ abstract Prescription = {
     flags
         startcat = Prescricao ;
     cat
-        Prescricao ; Medicamento ; Tempo ; Turno ; Dose ;
+        Medicamento ; Dose ; Administracao ; Duracao ; Frequencia ; TempFreq ; Prescricao ;
     fun
-        Durante : Dose -> Tempo -> Turno -> Prescricao ;
+        Aplicacao : Administracao -> TempFreq -> Prescricao ;
+        Tempo: Duracao -> Frequencia -> TempFreq ;
+        f6Horas, f12Horas, f24Horas : Frequencia ;
+        t1Semana, t2Semanas, t1Mes, t2Meses : Duracao ;
+        Aplicar, Tomar, Injetar : Dose -> Administracao ;
         Qtd :  Medicamento -> Dose ;
-        DeManha, DeTarde, DeNoite : Tempo -> Turno ;
-        DoisTurnos : Turno -> Turno -> Turno ;
-        QualquerHorario : Turno -> Tempo ;
         Diazepam, Insulina, Cefalexina, Ciprofloxacino : Medicamento ;
-        AlgunsMeses: Tempo ;
 }
